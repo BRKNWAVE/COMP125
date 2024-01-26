@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assignment1.css">
+    <title>Assignment 1 - 301402979</title>
+</head>
+<body>
+    <div id="header">
+        <h1>COMP125 SEC 403 - Assignment 1</h1>
+        <h2>Ailric Bean - 301402979</h2>
+    </div>
+    <div id="container">
+        <div id="multiplication-table">
+            <button onclick="showPopup()">Click Me</button>
+        </div>
+    </div>
+    <div id="footer">
+        <p>COMP125 SEC 403 - Assignment 1 - &copy; Ailric Bean - 301402979</p>
+    </div>
+    <div id="popup" class="hidden">
+        <label for="rowSlider">Rows:</label>
+        <input type="range" id="rowSlider" min="1" max="10" value="1">
+        <span id="rowCount">1</span><br>
+        <label for="columnSlider">Columns:</label>
+        <input type="range" id="columnSlider" min="1" max="10" value="1">
+        <span id="columnCount">1</span><br>
+        <button onclick="generateTable()">Generate Table</button>
+    </div>
+    <script src="./assignment1.js"></script>
+</body>
+</html>
